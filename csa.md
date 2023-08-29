@@ -97,9 +97,8 @@
 <table>
   <tr>
     <th>Week</th>
-    <th>Plans</th>
-    <th>Hacks(Todo)</th>
-    <th>Tangibles</th>
+    <th>Exit Review Ticket</th>
+    <th>Hacks(ipynb)</th>
   </tr>
 
   
@@ -129,7 +128,6 @@
        <!-- remove title and url -->
     
    <!-- make a link in the column -->
-      - <a href="/student//c1.4/2023/08/21/GitHub_Pages.html">GitHub Pages</a> <br/> 
        <!-- remove title and url -->
     
    <!-- make new column -->
@@ -138,7 +136,7 @@
        <!-- remove delimiter -->
     
    <!-- make a link in the column -->
-      - <a href="/student//2023/08/16/Tools_Equipment.html">VSCode, Python, Jupyter, ...</a> <br/> 
+   - <a href="/student/student/calc">Calculator, tool setup notes, etc</a> <br/> 
        <!-- remove title and url -->
     
    <!-- make new column -->
@@ -259,9 +257,8 @@
 <table>
   <tr>
     <th>Week</th>
-    <th>Plans</th>
-    <th>Hacks(Todo)</th>
-    <th>Tangibles</th>
+    <th>Exit Review Ticket</th>
+    <th>Hacks(IPYNB)</th>
   </tr>
 
   
@@ -409,9 +406,8 @@
 <table>
   <tr>
     <th>Week</th>
-    <th>Plans</th>
-    <th>Hacks(Todo)</th>
-    <th>Tangibles</th>
+    <th>Exit Review Ticket</th>
+    <th>Hacks(IPYNB)</th>
   </tr>
 
   
@@ -589,9 +585,8 @@
 <table>
   <tr>
     <th>Week</th>
-    <th>Plans</th>
-    <th>Hacks(Todo)</th>
-    <th>Tangibles</th>
+    <th>Exit Review Ticket</th>
+    <th>Hacks(IPYNB)</th>
   </tr>
 
   
@@ -739,9 +734,8 @@
 <table>
   <tr>
     <th>Week</th>
-    <th>Plans</th>
-    <th>Hacks(Todo)</th>
-    <th>Tangibles</th>
+    <th>Exit Review Ticket</th>
+    <th>Hacks(IPYNB)</th>
   </tr>
 
   
@@ -889,9 +883,8 @@
 <table>
   <tr>
     <th>Week</th>
-    <th>Plans</th>
-    <th>Hacks(Todo)</th>
-    <th>Tangibles</th>
+    <th>Exit Review Ticket</th>
+    <th>Hacks(IPYNB)</th>
   </tr>
 
   
@@ -1039,9 +1032,8 @@
 <table>
   <tr>
     <th>Week</th>
-    <th>Plans</th>
-    <th>Hacks(Todo)</th>
-    <th>Tangibles</th>
+    <th>Exit Review Ticket</th>
+    <th>Hacks(IPYNB)</th>
   </tr>
 
   
@@ -1219,9 +1211,8 @@
 <table>
   <tr>
     <th>Week</th>
-    <th>Plans</th>
-    <th>Hacks(Todo)</th>
-    <th>Tangibles</th>
+    <th>Exit Review Ticket</th>
+    <th>Hacks(IPYNB)</th>
   </tr>
 
   
@@ -1339,9 +1330,8 @@
 <table>
   <tr>
     <th>Week</th>
-    <th>Plans</th>
-    <th>Hacks(Todo)</th>
-    <th>Tangibles</th>
+    <th>Exit Review Ticket</th>
+    <th>Hacks(IPYNB)</th>
   </tr>
 
   
