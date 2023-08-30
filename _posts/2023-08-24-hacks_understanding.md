@@ -2,7 +2,7 @@
 title: Hacks (Calculator)
 layout: default
 description: Hackcs 
-permalink: /student/calc
+permalink: /student/calcu
 categories: []
 tags: [javascript, fetch, dom, getElementID, appendChild]
 ---
