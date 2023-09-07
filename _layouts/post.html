@@ -1,57 +1,70 @@
 ---
-title: Hacks (Calculator)
 layout: default
-description: Hackcs 
-permalink: /student/calc
-categories: []
-tags: [javascript, fetch, dom, getElementID, appendChild]
 ---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-# Simple Calculator
+  <header class="post-header">
+    <h1 
+      class="post-title p-name" itemprop="name headline">{{ page.title | escape }}
+      • {% include read_time.html -%}
+    </h1>
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Simple Calculator</title>
-</head>
-<body>
-    <h2>Calculator</h2>
-    <input type="text" id="result" readonly>
-    <br>
-    <button onclick="appendToResult('1')">1</button>
-    <button onclick="appendToResult('2')">2</button>
-    <button onclick="appendToResult('3')">3</button>
-    <button onclick="appendToResult('+')">+</button>
-    <br>
-    <button onclick="appendToResult('4')">4</button>
-    <button onclick="appendToResult('5')">5</button>
-    <button onclick="appendToResult('6')">6</button>
-    <button onclick="appendToResult('-')">-</button>
-    <br>
-    <button onclick="appendToResult('7')">7</button>
-    <button onclick="appendToResult('8')">8</button>
-    <button onclick="appendToResult('9')">9</button>
-    <button onclick="appendToResult('*')">*</button>
-    <br>
-    <button onclick="appendToResult('0')">0</button>
-    <button onclick="calculateResult()">=</button>
-    <button onclick="clearResult()">C</button>
-    <button onclick="appendToResult('/')">/</button>
-    <script>
-        function appendToResult(value) {
-            document.getElementById("result").value += value;
-        }
+    <p class="post-meta post-meta-title">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.modified_date -%}
+        ~ 
+        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+          {{ mdate | date: date_format }}
+        </time>
+      {%- endif -%}
+      {%- if page.author -%}
+        • {% for author in page.author %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif %}
+    </p>
 
-        function calculateResult() {
-            let resultField = document.getElementById("result");
-            let result = eval(resultField.value);
-            resultField.value = result;
-        }
+    {%- if page.description -%}
+      <h2>Description</h2>
+      {%- if site.html_escape.description -%}
+        <p class="page-description">{{ page.description | escape }}</p>
+      {%- else -%}
+        <p class="page-description">{{ page.description }}</p>
+      {%- endif -%}
+    {%- endif -%}
+    
 
-        function clearResult() {
-            document.getElementById("result").value = "";
-        }
-    </script>
-</body>
-</html>
+    {% if page.categories.size > 0 and site.show_tags %}
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      {% for category in  page.categories  %}
+        {%- assign prefix = category | slice: 0 -%}
+        {% if prefix == "C" %}
+          <a class="category-tags-link" href="{{site.baseurl}}/categories/cte#{{category|slugize}}">{{category}}</a>
+        {% else %}
+          <a class="category-tags-link" href="{{site.baseurl}}/categories/ap#{{category|slugize}}">{{category}}</a>
+        {% endif %}
+        {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+      </p>
+    {% endif %}
+
+    {%- if page.toc -%}
+      {% include toc.html html=content %}
+    {%- endif -%}
+
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+  {%- if page.comments -%}
+    {%- include utterances.html -%}
+  {%- endif -%}
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
