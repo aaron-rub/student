@@ -25,4 +25,3 @@ Frontend: The frontend development team, using JavaScript and frameworks like Re
 - Add a database that saves all equations that a user has had solved
 - Grammar Check for English Assignments
 - Calculator
-- 
